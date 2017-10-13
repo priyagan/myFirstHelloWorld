@@ -13,6 +13,7 @@ public class empDetails  implements RequestHandler<empDetails.RequestClass,empDe
 
     public ResponseClass handleRequest(RequestClass request, Context context) {
         String greetingString = String.format("Hello %s, %s.", request.firstName, request.lastName);
+        System.out.println("welcome");
         if(request.age > 15)
             
             greetingString = greetingString.concat(" Im an adult");
